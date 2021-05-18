@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import  "./conversor.css"
 
 export default class Conversor extends Component {
    
@@ -26,9 +27,9 @@ export default class Conversor extends Component {
 
                 return res.json()
             })
-            .then(json => {
-                
-                let cotacao = json.USDBRL.high;
+            .then(json => { 
+                let codigo = `${this.props.moedaA}${this.props.moedaB}`
+                let cotacao = json[codigo].high;
                 let moedaB_valor = ( parseFloat(this.state.moedaA_valor) * cotacao).toFixed(2)
                 this.setState({moedaB_valor})
                 console.log(cotacao)
