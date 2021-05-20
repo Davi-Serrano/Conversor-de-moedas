@@ -1,9 +1,12 @@
-html,body{
-    height: 100%;
-}
-
-.App{
+.linha{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-top: 10px;
+    justify-content: space-around;
+}
+h1{
+    text-align: center;
+}
+.App{
+    margin: auto;
+    max-width: 900px;
 }
