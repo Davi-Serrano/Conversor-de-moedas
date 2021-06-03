@@ -2,11 +2,12 @@ import React, {Component} from 'react'
 import './App.css';
 
 import Conversor from "./componentes/conversor"
+import Header from "./componentes/header"
 
 function App() {
   return (
     <div className="App">
-      <h1>Conversor de Moedas</h1>
+      <Header />
       <div className="linha">
           <Conversor moedaA="USD" moedaB="BRL"></Conversor>
           <Conversor moedaA="BRL" moedaB="USD"></Conversor>
